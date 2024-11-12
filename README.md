@@ -16,7 +16,7 @@
 1. Склонируйте репозиторий:
 
    ```bash
-   git clone <URL_вашего_репозитория>
+   git clone https://github.com/Taratheliberator/laba_on_node_with_database_with_files
    cd product-management-api
    ```
 
