@@ -8,11 +8,11 @@
     "dev": "nodemon app.js"
   },
   "keywords": ["api", "product", "category", "file-upload", "express", "sequelize", "postgresql"],
-  "author": "Ваше Имя",
+  "author": "Имя",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
-    "multer": "^1.4.5",
+    "multer": "^1.4.4",
     "pg": "^8.10.0",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.29.3"
