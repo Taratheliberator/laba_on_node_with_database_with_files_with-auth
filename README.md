@@ -17,7 +17,7 @@
 
    ```bash
    git clone https://github.com/Taratheliberator/laba_on_node_with_database_with_files
-   cd product-management-api
+   cd laba_on_node_with_database_with_files
    ```
 
 2. Установите зависимости:
