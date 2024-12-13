@@ -4,10 +4,11 @@ const sequelize = require('./config/database');
 const multer = require('multer');
 const path = require('path');
 
+const userRoutes = require('./routes/userRoutes');
 const productRoutes = require('./routes/productRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 
-const app = express();
+const app = express(); // Объявляем app в начале
 const PORT = 3000;
 
 // Настройка загрузки файлов
@@ -25,8 +26,11 @@ const upload = multer({ storage });
 // Раздача статических файлов
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-// Использование роутов и JSON
+// Использование JSON
 app.use(express.json());
+
+// Подключение маршрутов
+app.use(userRoutes);
 app.use(productRoutes);
 app.use(categoryRoutes);
 
